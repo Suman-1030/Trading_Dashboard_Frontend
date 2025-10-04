@@ -1,0 +1,368 @@
+body{
+     padding: 0px;
+     margin: 0px;
+     
+}
+/* Assuming your table wrapper has className="Table" */
+.Table {
+    overflow-x: auto;          /* Horizontal scroll if table is too wide */
+    margin: 20px 0;
+  }
+  
+  .Table table {
+    width: 100%;
+    border-collapse: collapse; /* Remove double borders */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .Table th, .Table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+  }
+  
+  .Table th {
+    background-color: #4CAF50; /* Header color */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .Table tr:nth-child(even) {
+    background-color: #f2f2f2;  /* Stripe rows */
+  }
+  
+  .Table tr:hover {
+    background-color: #e2f7e2;  /* Hover effect */
+  }
+  
+  .Table td {
+    color: #333;
+  }
+
+  .WL {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .WL h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .WL p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  .WL strong {
+    color: #000;
+  }
+  
+  .wlbar {
+    height: 300px;
+    margin-bottom: 25px;
+  }
+  
+  .wr {
+    margin-top: 25px;
+    text-align: center;
+  }
+  
+  .wr h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #444;
+  }
+  
+  .wr canvas {
+    max-height: 300px !important;
+  }
+  
+
+  .bottom-container {
+    padding: 16px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .bottom-container h3 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .trades-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .trades-table th, .trades-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .trades-table th {
+    background-color: #f5f5f5;
+  }
+  
+  .trades-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .win {
+    background-color: #28a745;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .loss {
+    background-color: #dc3545;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .positive {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .negative {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  
+  /* TotalTrade.css */
+
+/* Main Container */
+.total-trade-container {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.container-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+/* Tabs Navigation */
+.tabs-navigation {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 16px;
+}
+
+.tab-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.tab-active {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+}
+
+.tab-inactive {
+  color: #6b7280;
+}
+
+.tab-inactive:hover {
+  color: #374151;
+  border-bottom-color: #d1d5db;
+}
+
+/* Tab Content */
+.tab-content {
+  min-height: 200px;
+}
+
+/* Table Styles */
+.table-container {
+  overflow-x: auto;
+}
+
+.metrics-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #e5e7eb;
+}
+
+.table-header {
+  background-color: #f9fafb;
+}
+
+.table-head {
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid #e5e7eb;
+}
+
+.table-row {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-cell {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #e5e7eb;
+  color: #1f2937;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.metric-card {
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease;
+}
+
+.metric-card:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.metric-label {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.metric-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Chart Container */
+.chart-container {
+  height: 256px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .total-trade-container {
+    padding: 12px;
+  }
+  
+  .cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 8px;
+  }
+  
+  .tab-button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  
+  .chart-container {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tabs-navigation {
+    flex-direction: column;
+    border-bottom: none;
+  }
+  
+  .tab-button {
+    border-bottom: none;
+    border-left: 2px solid transparent;
+    text-align: left;
+  }
+  
+  .tab-active {
+    border-bottom-color: transparent;
+    border-left-color: #2563eb;
+  }
+  
+  .tab-inactive:hover {
+    border-bottom-color: transparent;
+    border-left-color: #d1d5db;
+  }
+}
+
+.PL {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 750px;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.PL h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.tag div {
+  padding: 6px 12px;
+  background: #f8f9fa;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+.tag strong {
+  color: #000;
+}
+
